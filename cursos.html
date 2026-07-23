@@ -1,103 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos | Melchior Felix</title>
-    <meta name="description" content="Cursos e certificações profissionais de Melchior Felix.">
-    <link rel="icon" href="resources/img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="resources/css/reset.css">
-    <link rel="stylesheet" href="resources/css/style-projetos.css">
-
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cursos e certificações de Melchior Felix.">
+  <title>Formação | Melchior Felix</title>
+  <link rel="icon" href="resources/img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/reset.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <script src="resources/js/i18n.js" defer></script>
+</head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-        <ul class="navbar-nav ">
-          <li class="nav-item ">
-            <a class="nav-link" href="index.html">Voltar</a>
-          </li>
-        </ul>
-    </nav>
-  </header>
-
-  <main>
-  <section class="table-wrapper" aria-labelledby="courses-title">
-    <h1 id="courses-title" class="page-title">Cursos e certificações</h1>
-    <div>
-      <table class="table table-striped">
-        <thead class="table-dark">
-          <tr>
-            
-            <th scope="col">Nome do Curso</th>
-            <th scope="col">Certificado</th>
-            <th scope="col">Plataforma</th>
-            <th scope="col">Deploy/Git</th>
-          </tr>
-        </thead>
-        <tbody>
-
-          <tr>
-            <td>Spring Boot & MVC com Thymeleaf </td>
-            <td><a href="https://www.udemy.com/certificate/UC-DEL7HUH3/" target="_blank">Acesse aqui</a></td>
-            <td>Udemy</td>
-            <td><a href="https://mysterious-lake-74243.herokuapp.com/" target="_blank">Deploy</a></td>
-          </tr>
-
-          <tr>
-            <td>Spring Boot & MVC com AJAX </td>
-            <td><a href="https://www.udemy.com/certificate/UC-NU75DWZ9/" target="_blank">Acesse aqui</a></td>
-            <td>Udemy</td>
-            <td><a href="https://github.com/MelchiorFelix/demo-ajax" target="_blank">GitHub</a></td>
-          </tr>
-
-          <tr>
-            <td>Angular 5, JWT, Spring Boot,REST,Security,Data e MongoDB</td>
-            <td><a href="https://www.udemy.com/certificate/UC-b140bb3e-1800-467f-a7f5-ba8c598dc6f7/" target="_blank">Acesse aqui</a></td>
-            <td>Udemy</td>
-            <td><a href="https://github.com/MelchiorFelix/Curso-Angular-5-JWT-Spring-Boot-REST-Security-Data-e-MongoDB" target="_blank">Github</a></td>
-          </tr>
-
-          <tr>
-            <td>Formação Java</td>
-            <td><a href="https://cursos.alura.com.br/degree/certificate/3d285d4b-28c6-472e-b254-bf13d51d91b8" target="_blank">Acesse aqui</a></td>
-            <td>Alura</td>
-            <td><a href="https://github.com/MelchiorFelix/formacao-java" target="_blank">Github</a></td>
-          </tr>
-
-          <tr>
-            <td>Spring Boot Parte 1: Construa uma API Rest</td>
-            <td><a href="https://cursos.alura.com.br/certificate/12660a8d-72ec-42ba-91b5-3ad1d0228a02" target="_blank">Acesse aqui</a></td>
-            <td>Alura</td>
-            <td><a href="https://github.com/MelchiorFelix/Curso-Spring-Boot-Parte-1-Construa-uma-API-Rest" target="_blank">Github</a></td>
-          </tr>
-
-          <tr>
-            <td>Spring Boot Parte 2: Segurança da API, Cache e Monitoramento</td>
-            <td><a href="https://cursos.alura.com.br/certificate/cc379693-bf9e-4101-b74b-24f63f92d6b5" target="_blank">Acesse aqui</a></td>
-            <td>Alura</td>
-            <td><a href="https://github.com/MelchiorFelix/Curso-Spring-Boot-Parte-2-Seguran-a-da-API-Cache-e-Monitoramento" target="_blank">Github</a></td>
-          </tr>
-
-          <tr>
-            <td>Cursando AceleraDev Java</td>
-            <td><a  target="_blank">-</a></td>
-            <td>Codenation</td>
-            <td><a href="https://github.com/MelchiorFelix/AceleraDev-Java" target="_blank">-</a></td>
-          </tr>
-
-          <tr>
-            <td>Formação DevOps</td>
-            <td><a target="_blank">-</a></td>
-            <td>Alura</td>
-            <td><a target="_blank">-</a></td>
-          </tr>
-          
-        </tbody>
-      </table>
+  <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span>MF</span><strong>Melchior Felix</strong></a>
+    <a class="back-link" href="index.html">← <span data-i18n="page.back">Voltar ao início</span></a>
+    <div class="language-switcher" aria-label="Selecionar idioma">
+      <button type="button" data-lang="pt">PT</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="es">ES</button>
     </div>
-  </section>
+  </header>
+  <main id="main">
+    <section class="inner-hero learning-hero">
+      <p class="section-label">Learning / 02</p>
+      <h1 data-i18n="learning.heading">Aprendizado contínuo</h1>
+      <p data-i18n="learning.intro">Cursos e formações que ampliaram minha prática em engenharia de software.</p>
+    </section>
+    <section class="learning-section">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th data-i18n="learning.course">Curso</th><th data-i18n="learning.platform">Plataforma</th><th data-i18n="learning.certificate">Certificado</th><th data-i18n="learning.project">Projeto</th></tr></thead>
+          <tbody>
+            <tr><td>Spring Boot & MVC com Thymeleaf</td><td>Udemy</td><td><a href="https://www.udemy.com/certificate/UC-DEL7HUH3/" target="_blank" rel="noopener noreferrer" data-i18n="learning.open">Acessar</a></td><td><a href="https://mysterious-lake-74243.herokuapp.com/" target="_blank" rel="noopener noreferrer">Deploy ↗</a></td></tr>
+            <tr><td>Spring Boot & MVC com AJAX</td><td>Udemy</td><td><a href="https://www.udemy.com/certificate/UC-NU75DWZ9/" target="_blank" rel="noopener noreferrer" data-i18n="learning.open">Acessar</a></td><td><a href="https://github.com/MelchiorFelix/demo-ajax" target="_blank" rel="noopener noreferrer">GitHub ↗</a></td></tr>
+            <tr><td>Angular 5, JWT, Spring Boot, REST & MongoDB</td><td>Udemy</td><td><a href="https://www.udemy.com/certificate/UC-b140bb3e-1800-467f-a7f5-ba8c598dc6f7/" target="_blank" rel="noopener noreferrer" data-i18n="learning.open">Acessar</a></td><td><a href="https://github.com/MelchiorFelix/Curso-Angular-5-JWT-Spring-Boot-REST-Security-Data-e-MongoDB" target="_blank" rel="noopener noreferrer">GitHub ↗</a></td></tr>
+            <tr><td>Formação Java</td><td>Alura</td><td><a href="https://cursos.alura.com.br/degree/certificate/3d285d4b-28c6-472e-b254-bf13d51d91b8" target="_blank" rel="noopener noreferrer" data-i18n="learning.open">Acessar</a></td><td><a href="https://github.com/MelchiorFelix/formacao-java" target="_blank" rel="noopener noreferrer">GitHub ↗</a></td></tr>
+            <tr><td>Spring Boot: Construa uma API REST</td><td>Alura</td><td><a href="https://cursos.alura.com.br/certificate/12660a8d-72ec-42ba-91b5-3ad1d0228a02" target="_blank" rel="noopener noreferrer" data-i18n="learning.open">Acessar</a></td><td><a href="https://github.com/MelchiorFelix/Curso-Spring-Boot-Parte-1-Construa-uma-API-Rest" target="_blank" rel="noopener noreferrer">GitHub ↗</a></td></tr>
+            <tr><td>Spring Boot: Segurança, Cache e Monitoramento</td><td>Alura</td><td><a href="https://cursos.alura.com.br/certificate/cc379693-bf9e-4101-b74b-24f63f92d6b5" target="_blank" rel="noopener noreferrer" data-i18n="learning.open">Acessar</a></td><td><a href="https://github.com/MelchiorFelix/Curso-Spring-Boot-Parte-2-Seguran-a-da-API-Cache-e-Monitoramento" target="_blank" rel="noopener noreferrer">GitHub ↗</a></td></tr>
+            <tr><td>AceleraDev Java</td><td>Codenation</td><td>—</td><td><a href="https://github.com/MelchiorFelix/AceleraDev-Java" target="_blank" rel="noopener noreferrer">GitHub ↗</a></td></tr>
+            <tr><td>Formação DevOps</td><td>Alura</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
   </main>
-
+  <footer><p>© <span id="year"></span> Melchior Felix</p><div><a href="https://github.com/MelchiorFelix">GitHub</a><a href="https://www.linkedin.com/in/melchior-felix/">LinkedIn</a></div><p data-i18n="footer.location">Do Acre para o mundo.</p></footer>
 </body>
 </html>
