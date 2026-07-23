@@ -13,6 +13,19 @@
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 }
 
+.page-title {
+    padding: 2rem 1rem;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.projects-title {
+    color: white;
+    background-color: #333;
+}
+
 .mr-auto, .mx-auto {
     margin-right: auto;
 }
@@ -48,6 +61,7 @@
 
 .projeto {
     min-height: 50vh; 
+    overflow: auto;
     padding: 2em;
 }
 
@@ -86,15 +100,17 @@
 }
 
 .projeto .img-acess {
-    float: left;
-    margin-right: 2em;
+    margin: 0 auto 2em;
 }
 @media (min-width: 600px) {
     .projeto .img-acess {
         float: left;
+        margin-right: 2em;
     }
 }
 .projeto .img-acess img {
+    height: auto;
+    max-width: 100%;
     width: 300px;
 }
 
@@ -114,6 +130,11 @@ table {
     border: 1px solid #ddd;
     font-size: 0.8em;
     
+  }
+
+  .table-wrapper {
+      overflow-x: auto;
+      padding-bottom: 1rem;
   }
 
   @media(min-width: 600px){
@@ -141,6 +162,17 @@ table {
     transition: transform 500ms;
 }
 
-img:hover {
+.img-acess img:hover {
     transform: scale(1.2);
+}
+
+a:focus-visible {
+    outline: 3px solid #d5aa00;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.01ms !important;
+    }
 }

@@ -1,5 +1,11 @@
 body{
     font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 @media (min-width: 576px) {
     body {
@@ -24,6 +30,7 @@ header {
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 10;
 }
 
 .menu ul {
@@ -128,7 +135,8 @@ header {
 
 .portfolio .grid {
     display: flex;
-    gap: 10em;
+    flex-wrap: wrap;
+    gap: clamp(2rem, 10vw, 10rem);
     justify-content: center;
 }
 
@@ -195,6 +203,9 @@ header {
 }
 
 .contato .icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
     text-align: center;
 }
 .contato a {
@@ -207,4 +218,21 @@ header {
 .contato a:active,
 .contato a:hover {
    text-shadow: 0px 0px 10px rgb(218, 218, 45);
+}
+
+a:focus-visible {
+    outline: 3px solid #f2cf45;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
 }
